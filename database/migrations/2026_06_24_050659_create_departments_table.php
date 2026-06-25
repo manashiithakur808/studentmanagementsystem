@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('departments', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->unsignedNigInteger('hod_id');
+            $table->unsignedBigInteger('hod_id');
             $table->text('description')->nullable();
             $table->timestamps();
         });
