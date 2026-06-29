@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 
@@ -20,3 +21,9 @@ Route::get('/dashboard', function () {
     }
     return view('dashboard');
 })->name('dashboard');
+=======
+
+Route::get('/', function () {
+    return view('welcome');
+});
+>>>>>>> b2903720525738ccb61c7575855ac0ff28b34811
